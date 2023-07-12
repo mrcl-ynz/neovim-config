@@ -31,6 +31,11 @@ local keymaps = {
 		['<A-k>'] = ':m .-2<CR>==',
 
 		['<Space>e'] = ':Ex<CR>',
+
+		-- Diagnostics
+		['<Space>d'] = vim.diagnostic.open_float,
+		['[d'] = vim.diagnostic.goto_prev,
+		[']d'] = vim.diagnostic.goto_next,
 	},
 	visual = {
 		['<'] = '<gv',
