@@ -60,12 +60,12 @@ function M.setup()
 
 	cmp.setup.cmdline(':', {
 		mapping = cmp.mapping.preset.cmdline(),
-		sources = {
+		sources = cmp.config.sources({
 			{ name = 'path' }
 		},
 		{
-			{ name = 'buffer' }
-		}
+			{ name = 'cmdline' }
+		})
 	})
 end
 
